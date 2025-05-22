@@ -10,6 +10,8 @@ namespace SmartServices.Infrastructure.Mapper
         {
             CreateMap<CategoryDtoForInsertion, Category>();
             CreateMap<CategoryDtoForUpdate, Category>().ReverseMap();
+            CreateMap<ServiceDtoForInsertion, Service>();
+            CreateMap<ServiceDtoForUpdate, Service>().ReverseMap();
 
 
         }

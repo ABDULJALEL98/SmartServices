@@ -3,6 +3,7 @@
     public interface IServiceManager
     {
         ICategoryService CategoryService { get; }
+        IServiceService ServiceService { get; }
 
 
     }

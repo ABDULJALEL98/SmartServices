@@ -26,11 +26,13 @@ namespace SmartServices.Infrastructure.Extensions
         {
             services.AddScoped<IRepositoryManager, RepositoryManager>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IServiceRepository, ServiceRepository>();
         }
         public static void ConfigureServiceRegistration(this IServiceCollection services)
         {
             services.AddScoped<IServiceManager, ServiceManager>();
             services.AddScoped<ICategoryService, CategoryManager>();
+            services.AddScoped<IServiceService, SevicesMeno>();
         }
 
 
